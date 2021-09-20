@@ -65,7 +65,7 @@ def print_c_payload(payload: bytes, buf: str, args: argparse.Namespace):
     """ Formats the payload output for C code. """
     fmt = "/////////////////////////////////////////////////////\n"
     fmt += f"//  source file: {os.path.basename(args.src_file)}\n"
-    fmt += f"// paylaod size: {len(payload)}\n"
+    fmt += f"// payload size: {len(payload)}\n"
     fmt += "/////////////////////////////////////////////////////\n\n"
     fmt += "char payload[] = "
     i = 0
@@ -85,7 +85,7 @@ def print_python_payload(payload: bytes, buf: str, args: argparse.Namespace):
     """ Formats the payload output for python code. """
     fmt = "#################################################\n"
     fmt += f"#  source file: {os.path.basename(args.src_file)}\n"
-    fmt += f"# paylaod size: {len(payload)}\n"
+    fmt += f"# payload size: {len(payload)}\n"
     fmt += "#################################################\n\n"
     i = 0
     while i < len(buf):
