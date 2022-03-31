@@ -168,7 +168,7 @@ def sane_environment() -> bool:
     Performs sanity checks of the build environment and ensures we have
     the required tools.
     """
-    requirements = ['nasas', 'objcopy']
+    requirements = ['nasm', 'objcopy']
     for target in requirements:
         print_info(f"Checking {YEL}{target}{NON} is installed: ", end="")
         if not which(target):
